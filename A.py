@@ -15,7 +15,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 def auth():
     AuTh = str(os.getegid()) + str(os.geteuid()) + os.getlogin()
     print(AuTh)
-    if AuTh == '1017410174u0_a174':
+    if AuTh == '1040010400u0_a400':
         print('BonJour Mr Oussama ZOUINE')
     else: sys.exit('Siir Thwa Azby Ta tkhless w khdmo')
 
