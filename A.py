@@ -1,6 +1,6 @@
 # DeVloped By AbdeeLkarim Amiri
 
-import requests , os , psutil , sys , jwt , pickle , json , binascii , time , urllib3 , xKEys , base64 , datetime , re ,socket , threading , http.client , ssl , gzip , asyncio , gc
+import requests , os , psutil , sys , jwt , pickle , json , binascii , time , urllib3 , xKEys , base64 , datetime , re ,socket , threading , http.client , ssl , gzip , asyncio , gc , uuid
 from io import BytesIO
 from protobuf_decoder.protobuf_decoder import Parser
 from xC4 import *
@@ -11,7 +11,16 @@ from threading import Thread
 from cfonts import render, say
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)  
-          
+ 
+def auth():
+    AuTh = str(os.getegid()) + str(os.geteuid()) + os.getlogin()
+    print(AuTh)
+    if AuTh == '1017410174u0_a174':
+        print('BonJour Mr Oussama ZOUINE')
+    else: sys.exit('Siir Thwa Azby Ta tkhless w khdmo')
+
+auth()
+                   
 def MajorLoGin(PyL):
     context = ssl._create_unverified_context()
     conn = http.client.HTTPSConnection("loginbp.common.ggbluefox.com", context=context)    
