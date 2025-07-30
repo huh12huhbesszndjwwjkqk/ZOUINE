@@ -26,7 +26,7 @@ def MajorLoGin(PyL):
     conn = http.client.HTTPSConnection("loginbp.common.ggbluefox.com", context=context)    
     headers = {
         'X-Unity-Version': '2018.4.11f1',
-        'ReleaseVersion': 'OB49',
+        'ReleaseVersion': 'OB50',
         'Content-Type': 'application/x-www-form-urlencoded',
         'X-GA': 'v1 1',
         'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.2; ASUS_Z01QD Build/QKQ1.190825.002)',
@@ -109,7 +109,7 @@ class FF_CLient():
             'Authorization': f'Bearer {JwT_ToKen}',
             'X-Unity-Version': '2018.4.11f1',
             'X-GA': 'v1 1',
-            'ReleaseVersion': 'OB49',
+            'ReleaseVersion': 'OB50',
             'Content-Type': 'application/x-www-form-urlencoded',
             'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 9; G011A Build/PI)',
             'Host': 'clientbp.common.ggbluefox.com',
@@ -134,7 +134,7 @@ class FF_CLient():
                 self.A = GeTToK()
                 self.O = OpEnUid(self.A)
                 print('AuTh => ' + self.A , self.O)
-                self.Version , self.V = '2019118399' , '1.111.11'      
+                self.Version , self.V = '2019118695' , '1.114.1'      
                 self.PyL = {
                     3: str(datetime.now())[:-7] ,
                     4: "free fire",
